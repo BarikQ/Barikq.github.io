@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: black;
+  color: white;
+  text-shadow: 0 0 3px;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-weight: 200;
+  transition: 0.2s ease all;
+}
+
+h1:hover {
+  text-shadow: 0px 0px 15px rebeccapurple;
+  color: red;
+  transition: 0.2s ease all;
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template: repeat(2, 200px)/ repeat(2, 400px);
+  justify-content: center;
+  grid-gap: 50px;
+  transition: 0.2s ease all;
+}
+
+.project {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 3px solid rebeccapurple;
+  box-shadow: 0 0 10px 3px rebeccapurple;
+  transition: 0.2s ease all;
+}
+
+.piskel {
+  background-image: url('./img/piskel.png');
+}
+
+.youtube {
+  background-image: url('./img/youtube.png');
+}
+
+.hexal {
+  background-image: url('./img/hexal.png');
+}
+
+.neutron {
+  background-image: url(./img/neutron_mail.png);
+}
+
+.project-text {
+  display: none;
+  height: 0%;
+  width: 0%;
+  transition: 0.2s ease all;
+}
+
+.project:hover .project-text {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease all;
+}
+
+.project-text h3 {
+  text-shadow: 0px 0px 15px rebeccapurple;
+  font-weight: 200;
+  color: red;
+  transition: 0.2s ease all;
+  font-size: 2rem;
+}
+
+.project-text>a :hover {
+  transform: scale(1.1);
+  transition: 0.2s ease all;
+}
+
+footer {
+  padding-top: 36px;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-wrapper {
+  width: 500px;
+  margin-top: 15px;
+}
+
+.contact-wrapper>a {
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: 0.2s ease all;
+}
+
+.contact-wrapper:hover>a {
+  transition: 0.2s ease all;
+  transform: scale(1.1);
+}
+
+.contact-wrapper>a>h4 {
+  margin-left: 15px;
+  font-weight: 200;
+}
+
+.contact-wrapper img {
+  height: 50px;
+  width: 50px;
+}
